@@ -4,13 +4,15 @@ import Logo from "../logo.png";
 //react font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { LinkContainer } from "react-router-bootstrap";
+import { Link } from "react-scroll";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav className="navbar  navbar-expand-lg navbar-light bg-dark">
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img className="logo" alt="logo" />
+          {/* <img className="logo" alt="logo" /> */}
         </a>
         <button
           className="navbar-toggler"
@@ -26,35 +28,85 @@ function Navbar() {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
-              </a>
+            <li
+              className="nav-item active"
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+            >
+              <Link
+                className="nav-link"
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+              >
+                home <span className="sr-only">(current)</span>
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                about me
-              </a>
+            <li
+              Link
+              to="about"
+              spy={true}
+              smooth={true}
+              className="nav-item"
+              to="/about"
+            >
+              <Link
+                className="nav-link"
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+              >
+                about
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+
+            <li className="nav-item" to="/services">
+              <Link
+                className="nav-link"
+                activeClass="active"
+                to="service"
+                spy={true}
+                smooth={true}
+              >
                 services
-              </a>
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+            <li className="nav-item" to="/">
+              <Link
+                className="nav-link"
+                activeClass="active"
+                to="how-work"
+                spy={true}
+                smooth={true}
+              >
                 how work
-              </a>
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+            <li className="nav-item" to="/portfolio">
+              <Link
+                className="nav-link"
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+              >
                 portfolio
-              </a>
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+            <li className="nav-item" to="/contact">
+              <Link
+                className="nav-link"
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+              >
                 contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

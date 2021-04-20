@@ -1,10 +1,11 @@
 import React from "react";
 import Typed from "react-typed";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <div>
-      <div className="header-wraper">
+      <div id="home" className="header-wraper">
         <div className="main-info">
           <h1>web development and websites promotions</h1>
           <Typed

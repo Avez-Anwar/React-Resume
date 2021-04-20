@@ -23,23 +23,28 @@ nav a.nav-link{
   letter-spacing: 0.0375rem;
   cursor: pointer;
   margin: 2rem;
+ 
+
+ 
 }
 
 nav ul li{
   text-transform: uppercase;
+  
 }
 
 .navbar-nav>li>a{
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color:var(--primary-white)!important;
-  border-top: 0.1875rem solid var(--primary-dark);
+  border-top: 0.1575rem solid var(--primary-dark);
+ 
 }
 
 .navbar-brand{
-  max-width: 17.25rem;
-  padding: 0 !important;
-  height: 6rem;
+  width: 17.25rem;
+  padding: 5px !important;
+  height: 1rem;
 }
 
 @media (max-width:768px) {
@@ -63,8 +68,15 @@ nav ul li{
   background: url(laptopFive.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  height: 90vh;
+  background-color: rgba(68, 43, 43, 0.5) !important;
+  height: 150vh;
+}
+
+.bg-dark {
+  background-color: #343a40!important;
+  position: fixed !important;
+  width: 100% !important;
+  
 }
 
 .main-info{
@@ -95,6 +107,16 @@ nav ul li{
   }
   
 }
+
+
+@media (max-width:768px){
+  .bg-dark {
+  background-color: #343a40!important;
+  position: relative !important;
+  width: 100% !important;
+}
+}
+
 
 nav{
   z-index: 2;

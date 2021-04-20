@@ -3,6 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from "react-particles-js";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import About from "./components/About";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Services from "./components/Services";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import { Link } from "react-scroll";
+import MiddleSection from "./components/MiddleSection";
 
 function App() {
   return (
@@ -21,6 +28,7 @@ function App() {
       />
       <Navbar />
       <Header />
+      <MiddleSection />
     </div>
   );
 }
